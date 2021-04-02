@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Enhao Sun">
+
+
+
+
+
+<title>面包基础干货 | Enhao&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/image/avatar.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Enhao&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Enhao&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">面包基础干货</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Enhao Sun</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">April 3, 2021&nbsp;&nbsp;10:18:46</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E5%8E%A8%E6%88%BF/">厨房</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="面包的分类"><a href="#面包的分类" class="headerlink" title="面包的分类"></a>面包的分类</h1><h2 id="按软硬程度"><a href="#按软硬程度" class="headerlink" title="按软硬程度"></a>按软硬程度</h2><p>按照它的软硬程度我们分为</p>
+<ul>
+<li>软式面包</li>
+<li>硬质类面包</li>
+<li>松质类面包</li>
+</ul>
+<h3 id="软脂类面包"><a href="#软脂类面包" class="headerlink" title="软脂类面包"></a>软脂类面包</h3><p>就是我们常吃的一些甜面包，比如像一些香肠面包、栗茸面包等等。</p>
+<p>它的口感<strong>比较甜、柔软</strong>，它一般以<strong>蛋、油脂、糖和原料的比重比较多</strong>，所以制造面包比较柔软。</p>
+<p>亚洲国家大部分都是喜欢吃这种软脂类面包。</p>
+<h3 id="硬脂类面包"><a href="#硬脂类面包" class="headerlink" title="硬脂类面包"></a>硬脂类面包</h3><p>比如法棍，俄罗斯大列等等，这些硬脂类面包，它含有的油量、糖和蛋的量都比较少，一般是以掺入<strong>少量的全麦粉</strong>，甚至以单一面粉来制作。</p>
+<p>这一类面包就是<strong>口感比较硬，内部比较柔软</strong>，但是它是比较健康的一种面包；软脂类面包的营养成分太高，热量太大，容易导致人肥胖，而硬脂类面包，因为它里面可以放入一些干果，比如核桃、芝麻等等这些果仁，更有利于我们身体的健康。</p>
+<h3 id="松子类面包"><a href="#松子类面包" class="headerlink" title="松子类面包"></a>松子类面包</h3><p>它是外皮比较酥脆，内部比较柔软的面包，像牛角面包、丹麦面包。</p>
+<p>这些面包它有一个特点，都是要嵌入一定量的油脂来制作的，所以这一类面包的油脂含量就会特别的大。</p>
+<h1 id="原料"><a href="#原料" class="headerlink" title="原料"></a>原料</h1><p>原料包含了以下：</p>
+<blockquote>
+<p>面粉，鸡蛋，油脂，糖，乳制品，酵母，盐，水</p>
+</blockquote>
+<h2 id="面粉"><a href="#面粉" class="headerlink" title="面粉"></a>面粉</h2><blockquote>
+<p>小麦最表皮那一层，含有的蛋白质是最高的，越往麦子的中心部位，它所含有的蛋白质越少，含的淀粉量越多，所以越往中心部位，那么它的筋度就越低</p>
+</blockquote>
+<p>根据面粉蛋白质含量不同，可以分为：</p>
+<ul>
+<li>高筋面粉：11-15%</li>
+<li>中筋面粉：9-11%</li>
+<li>低筋面粉：7-9%</li>
+</ul>
+<h3 id="高筋面粉"><a href="#高筋面粉" class="headerlink" title="高筋面粉"></a>高筋面粉</h3><p>主要制作面包，因为它的蛋白质含量高，且膨胀性比较好，能够使气体在膨胀过程中，不容易破裂。</p>
+<p>当高筋面粉吸水之后，它里面的蛋白质会吸水膨胀，逐渐的形成一个网状的结构，经过外力的作用，不断的搅打它，会形成面筋，然后形成面团，才能有更好的发酵的效果。</p>
+<h3 id="低筋面粉"><a href="#低筋面粉" class="headerlink" title="低筋面粉"></a>低筋面粉</h3><p>主要制作蛋糕，蛋白质含量低,不会有太大的筋度,制作时不会起团。</p>
+<h3 id="面筋"><a href="#面筋" class="headerlink" title="面筋"></a>面筋</h3><p>影响面筋的主要因素</p>
+<p><strong>面团温度：</strong></p>
+<p>面团的<u>温度越高，面筋形成的越快</u>，反之则慢，所以在冬季的时候，我们会加一点的温水来和面，使面更容易形成筋力。</p>
+<p><strong>面团含水量：</strong></p>
+<p>面团的<u>含水量越高面筋形成越快</u>，含水量越低当然越慢，因为面粉当中的蛋白质没有这么多的水分来吸收，它不能充分的膨胀，相互的交织在一起，形成网状结构。</p>
+<p><strong>面团放置时间：</strong></p>
+<p><u>将面粉和水和匀之后放置一段时间，等面粉当中的蛋白质充分吸收水分</u>，已经形成网状结构的时候，开始按照一定的方向揉搓这个面团，让它很快形成筋力，这在家庭当中特别实用，很多人用手活面感觉到特别困难，就是因为你放置的时间不够，面粉没有充分的吸收水分。</p>
+<p><strong>外力作用：</strong></p>
+<p>要用外力来揉才能形成网状结构，才能更好的形成面筋。</p>
+<p>面筋是面包膨胀的必要因素，如果我们将高筋粉轻轻用手和一下，我们并没有把它弄出来筋的话，烤出面包的体积不大，原因是它并没有形成一个良好的相互交织的蛋白质，也就是我们的面膜、面筋形成。</p>
+<blockquote>
+<p>Tips: 温度高面筋形成快。但是面团当中有酵母，酵母温度高了在打面的时候就会开始繁殖，使面团不利于操作，所以打面的时候我们最好控制面团的温度在26-28度</p>
+</blockquote>
+<h2 id="糖"><a href="#糖" class="headerlink" title="糖"></a>糖</h2><p>糖在面包当中是主要的原材料。可以分为，白砂糖、绵白糖，饴糖，还有淀粉的糖浆、红糖等等。</p>
+<h3 id="白砂糖"><a href="#白砂糖" class="headerlink" title="白砂糖"></a>白砂糖</h3><p>白砂糖是由红糖经过提纯之后加工出来的，分为<strong>粗砂糖</strong>、<strong>中砂糖</strong>和<strong>细砂糖。</strong></p>
+<p>在面包当中，<strong>粗砂糖主要是用来做装饰</strong>，比如说我们做一个乳酪条，撒一点的粗砂糖，装饰在面包表面，烤好之后这个糖还存在。但是不能用粗砂糖来打制面包，比如在面包配方中放入粗砂糖来搅拌的话，因为它颗粒比较大，很难熔化，导致面包打好了糖还没有化完，并且因为糖具有一种着色的作用，之后进行烘烤的时候，会使面包表面的颜色不均匀，有斑点。</p>
+<p><strong>中砂糖</strong>一般很少用到。细砂糖因为它的颗粒比较小，适合制作面包，同时适合制作一些蛋糕，好的细砂糖，比如像韩国细砂糖，它的颗粒相当的小，如果没有细砂糖，可以用绵白糖来代替。</p>
+<p><strong>绵白糖</strong>就是在<u>砂糖进行机器粉碎之后，加入一定量的转化糖</u>，也就是加了一定的酸性物质，<strong>糖在溶解过程当中，如果我们加入酸性物质，糖的分子的链就会断掉，它再次结晶的时候比较困难</strong>。绵白糖比较柔软、细腻，制作面包的时候，也可以用到一些绵白糖，它比较便宜。绵白糖还有一个特点，<strong>容易吸潮结块</strong>，所以在家庭当中，不要购入太大的量。 </p>
+<h3 id="饴糖"><a href="#饴糖" class="headerlink" title="饴糖"></a><strong>饴糖</strong></h3><p>用的最多的饴糖就是葡萄糖，在加入葡萄糖制作面包，主要的目的是<strong>使面包更加的柔软</strong>，它能够锁住水分，有很多面包里面会加入一点葡萄糖浆，<u>例如法棍，它的作用是给酵母提供能量，因为法棍里面没有糖，加一点点的饴糖酵母会生长的更好。</u>另外饴糖能够保住水分，加入一点点的葡萄糖浆，使我们的法棍的这个内部会更加的柔软。</p>
+<h3 id="玉米糖浆"><a href="#玉米糖浆" class="headerlink" title="玉米糖浆"></a><strong>玉米糖浆</strong></h3><p>它一般是从玉米当中提炼出来的，它能够保水，使产品更加的柔软，它也容易熔化，不至于造成产品的着色不均，所以制作月饼的时候，都会加入大量的淀粉糖浆。红糖它主要是甘蔗或者甜菜，在提炼糖的时候的初步生成的糖的物质，它里边并不是非常纯的糖的分子在里面，它含有其他的杂质。</p>
+<h2 id="油脂"><a href="#油脂" class="headerlink" title="油脂"></a>油脂</h2><blockquote>
+<p>熔点：晶体达到一个固定温度开始熔化<br>凝固点：晶体到达一个固定的温度开始凝固。</p>
+</blockquote>
+<p>在常温下成液态的称为油，在常温下成固态的称为脂，统称为油脂</p>
+<h3 id="黄油"><a href="#黄油" class="headerlink" title="黄油"></a>黄油</h3><p>黄油是从牛乳当中提炼出来的纯净的脂肪，其熔点为28-33℃，凝固点为15-25℃；</p>
+<p>在制作<strong>蛋糕</strong>的时候，会用到黄油的熔点和凝固点。加鸡蛋的时候，冷、热都有关系。 </p>
+<p>在制作<strong>面包</strong>的过程当中，加入一些黄油，一是能够使面筋更加的润滑，面团也比较好操作，此外，它的营养比较丰富，口感也有乳香味，所以在面包制作过程当中都会加入一定的油脂，至于加入什么油脂，根据制作面包的品种不同，加入的油脂也会有一定量的区别。</p>
+<h3 id="人造黄油"><a href="#人造黄油" class="headerlink" title="人造黄油"></a>人造黄油</h3><p>人造黄油是由动物或植物中提取的一种氢化油，熔点为35-38℃</p>
+<p>油里含有脂肪酸，人造黄油里面含有这种脂肪酸，人造黄油它从色泽和口感上接近于正常的黄油，但是它却不是从牛乳中分离出来的，一般<strong>主要是棕榈油中提炼出来的</strong>，因为棕榈油的价格比较低，经过提炼之后，通过<u>人工加入一定量的附香剂、乳化剂、增香剂</u>来制作出来的。</p>
+<p>在家庭中制作，我们一般使用真正的黄油比较好，人造黄油长期吃对人体造成一定量的伤害，主要因为这种油在人体的代谢比较缓慢，会在体内产生堆积，会造成人体的肥胖。</p>
+<h3 id="起酥油"><a href="#起酥油" class="headerlink" title="起酥油"></a>起酥油</h3><p>是在动物或植物油中加入10-20%的氮气和氢气，起发性和可塑性都好，熔点为42-45℃</p>
+<p>它打发之后，可以练习裱花用，也可以加入一些起酥类的产品，<strong>加入起酥油，它的可塑性会更好，面包膨胀的会更高。</strong></p>
+<p>起酥油有液态和固态起酥油，它的熔点比较高，在42到45度，真正的黄油熔点比较低，醒发的时候温度过高的话油就化了，容易流出来，做那些起酥类的产品，比如说制作松子类的面包，那一定要用到这种的起酥油，它<strong>更容易操作，熔点比较高</strong>，不容易造成跑油，等</p>
+<h3 id="关于熔点和凝固点"><a href="#关于熔点和凝固点" class="headerlink" title="关于熔点和凝固点"></a>关于熔点和凝固点</h3><p>举个栗子：</p>
+<ul>
+<li>冰，它的熔点是0度。当一块冰持续受到0度以上的温度时，它开始熔化成水，这是熔点；</li>
+<li>水，它和冰是同一种物质，当它持续受到0度以下的温度时，它开始凝固成冰，这是凝固点</li>
+</ul>
+<h2 id="乳制品"><a href="#乳制品" class="headerlink" title="乳制品"></a>乳制品</h2><blockquote>
+<p>包括牛奶、酸奶、奶粉、炼乳等等</p>
+</blockquote>
+<p>乳制品在面包当中的作用主要是给面包增加风味，但不是必需品。法棍里面就没有，但是像软脂类面包都要加一定量的乳制品，来提高面包的口感和它的风味。</p>
+<ul>
+<li>制作面包的时候，加一些牛奶，可以改善面包的营养价值和它的口感。</li>
+<li>制作蛋糕时加入一定量的酸奶，来改变蛋糕的口感。而制作面包的时候也会加入一定的炼乳，这样使面包更甜，乳味更浓。</li>
+</ul>
+<p>制作面包的时候，不能够全部加入牛奶来代替水，<strong>因为牛奶的蛋白质并没有经过高温，韧性比较强，</strong>有些人制作土司的时候，全部加入牛奶，结果制作出来的土司却比较硬，韧性很好，但是起发的效果并不好，原因就是加入牛奶太多，它的韧性太强。</p>
+<p>一般制作面包的时候，以最多是50%的量来加，比如水量是100克，最多加50克的牛奶，这样面包会更加的柔软，如果你加到70克的牛奶，加了30克的水，反而没有加50克的牛奶和50克水的面包柔软。但是加奶粉没有关系，<strong>因为奶粉在制作过程中经过高温干燥，它的蛋白质经过高温之后，已经把它的韧性破坏掉了</strong>，所以面包当中加的时候，一般配方里面都加入奶粉</p>
+<h2 id="酵母"><a href="#酵母" class="headerlink" title="酵母"></a>酵母</h2><blockquote>
+<p>酵母是一种生物膨大剂。</p>
+</blockquote>
+<p>酵母按耐糖量可以分为：</p>
+<ul>
+<li>耐糖酵母（焦糖酵母）：可以在高糖的面粉中繁殖</li>
+<li>不耐糖酵母（低糖酵母）：不可以在高糖的面粉中繁殖</li>
+</ul>
+<p>按活性程度还可以分为：</p>
+<ul>
+<li>鲜酵母</li>
+<li>活性干酵母</li>
+<li>即发活性干酵母</li>
+</ul>
+<h3 id="鲜酵母"><a href="#鲜酵母" class="headerlink" title="鲜酵母"></a>鲜酵母</h3><p>它主要是由人工培养的酵母液经过压榨，脱水制成的，它需要冷藏运输和冷藏来保存，它的保存期也比较短，但它的膨胀力和进炉之后的爆发力量，却好于计发干酵母。</p>
+<h3 id="活性干酵母"><a href="#活性干酵母" class="headerlink" title="活性干酵母"></a>活性干酵母</h3><p>活性干酵母现在用的比较少，因为它在使用过程中需要用温水进行活化，来激活酵母，因为酵母脱水之后进入休眠的状态，要让它继续繁殖，就要加温水激活它，使它开始繁殖，现在这种酵母已经基本上退出市场了</p>
+<h3 id="即发活性干酵母"><a href="#即发活性干酵母" class="headerlink" title="即发活性干酵母"></a>即发活性干酵母</h3><p>它使用比较简单，可以直接加入到面粉当中进行搅拌，完成发酵就好了。</p>
+<p>家庭当中，我们用的大部分是“即发活性干酵母</p>
+<h3 id="酵母生存温度"><a href="#酵母生存温度" class="headerlink" title="酵母生存温度"></a>酵母生存温度</h3><ul>
+<li>0-4度：休眠，繁殖的速度降到非常非常的低</li>
+<li>10度：开始变得活跃，进入缓慢的繁殖状态</li>
+<li>20-40度：繁殖最快。</li>
+<li>50-60度：酵母的繁殖能力开始下降，逐渐的开始灭活。</li>
+<li>70度以上：酵母已经死亡 :p</li>
+</ul>
+<p>所以在醒发面包的时候，都会定到28到32度，或者36度到38度，根据不同的面包需要不同的调解</p>
+<h3 id="酵母用量"><a href="#酵母用量" class="headerlink" title="酵母用量"></a>酵母用量</h3><p>与面粉的比例：</p>
+<ul>
+<li>即发酵母：1-2%</li>
+<li>鲜酵母：2.5-3%</li>
+</ul>
+<p><strong>即发酵母</strong></p>
+<ul>
+<li>做中总面的时候，用的量相对低一些，可以用1%左右</li>
+<li>如果用直接法来打面包的时候，用的量要稍微高一点，用到1.2%到1.5%左右</li>
+<li>如果面包配方当中糖量和盐量含的比较多，那么用的量就要稍高一些，在1.8%到2%左右。</li>
+</ul>
+<p><strong>鲜酵母</strong></p>
+<p>用的量要高一点点，因为鲜酵母含有一定的水分，所以要2.5%到3%左右，就是一百克的面粉要加2.5克到3克的鲜酵母，它的发酵才比较好。</p>
+<blockquote>
+<p>Tips<strong>：</strong>如果酵母的用量比较低，发酵的时间就比较长，那就容易使面包表皮产生龟裂，有硬皮，和酵母繁殖时间过长的时候，它里面产生的乳酸就比较多，那么面包酸味比较浓。但是酵母的量太大也不行，因为酵母的量太大，它产生的气体太多，但是面团并没有完全的成熟，还没有完全醒好，但是个头已经够了，烤出来的面包它就口感比较粗糙，口感也会很差。</p>
+</blockquote>
+<h2 id="盐和水"><a href="#盐和水" class="headerlink" title="盐和水"></a>盐和水</h2><blockquote>
+<p>盐在面包中是不可缺少的原料。</p>
+</blockquote>
+<ul>
+<li>盐在面包中添加量一般为1%–2%左右盐可以增强面筋能力。</li>
+<li>盐可以使面团搅拌时间延长，便于控制面团温度。</li>
+<li>盐能抑制酵母的发酵，它具有杀菌能力，也可调节发酵速度。可以使面包口感更好。</li>
+</ul>
+<p>水是面包主要材料。能够溶解配方中的各种物质，使面包更加柔软，同时也是面筋形成的必备原料。</p>
+<h2 id="蛋"><a href="#蛋" class="headerlink" title="蛋"></a>蛋</h2><ul>
+<li>50克重的鸡蛋约含有：蛋白30克，蛋黄20克；其中水分占了75%</li>
+<li>特性：起泡性、凝固性、乳化性</li>
+<li>影响蛋起泡性的因素有：黏度、油脂、PH值、温度、蛋的新鲜程度</li>
+</ul>
+<h1 id="面包的保存"><a href="#面包的保存" class="headerlink" title="面包的保存"></a>面包的保存</h1><p>在不用防腐剂时，夏季2天，冬季3-4天。但是一定是密封状态。</p>
+<p>如何让面包第二天不变硬：</p>
+<ol>
+<li>面包冷却后马上包装。</li>
+<li>温度越低面包老化越快（变硬）可以再次加温。</li>
+</ol>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/search?type=content&q=%E9%9D%A2%E5%8C%85%E7%9A%84%E5%88%86%E7%B1%BB">https://www.zhihu.com/search?type=content&amp;q=面包的分类</a></li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Enhao Sun</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://enhaosun.com/2021/04/03/Bread/Basic/">http://enhaosun.com/2021/04/03/Bread/Basic/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>爱是恒久忍耐</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Bread/"># Bread</a>
+                    
+                        <a href="/tags/Kitchen/"># Kitchen</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2019/04/28/Edinburgh/AprInEDN/">Cherry blossom season in Edinburgh</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Enhao Sun | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
