@@ -12,7 +12,7 @@
 
 
 
-<title>宜州路·上海 | Enhao&#39;s Blog</title>
+<title>Hallstatt, Austria | Enhao&#39;s Blog</title>
 
 
 
@@ -107,11 +107,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">宜州路·上海</h1>
+            <h1 class="post-title">Hallstatt, Austria</h1>
             
                 <div class="post-meta">
                     
@@ -120,14 +182,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">April 6, 2021&nbsp;&nbsp;19:00:00</a>
+                        Date: <a href="#">April 11, 2021&nbsp;&nbsp;19:28:41</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/%E6%91%84%E5%BD%B1/">摄影</a>
+                                <a href="/categories/%E5%9C%B0%E7%90%86/">地理</a>
                             
                         </span>
                     
@@ -136,15 +198,19 @@
         </header>
 
         <div class="post-content">
-            <p>旁边是一家Subway，<br>很适合坐在这些长椅上吹着微风，吃着三明治<br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_1.jpg"></p>
-<hr>
-<p>小树枝抽出了嫩芽<br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_3.jpg"></p>
-<hr>
-<p>整个街道都因为这些树木变得明亮，活泼了起来<br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_2.jpg"></p>
-<hr>
-<p>爱护草坪🍀<br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_4.jpg"><br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_8.jpg"><br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_5.jpg"><br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_6.jpg"><br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_7.jpg"></p>
-<hr>
-<p>在过俩月，它们也会长得郁郁葱葱<br><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/2021_04_06_sh_yizhou_road_9.jpg"></p>
+            <h1 id="Hallstatt"><a href="#Hallstatt" class="headerlink" title="Hallstatt"></a>Hallstatt</h1><p>哈尔施塔特镇（Hallstatt）是奥地利上奥地利州萨尔茨卡默古特地区的一个村庄，位于哈尔施塔特湖湖畔，是奥地利最古老的小镇。海拔高度511米，2005年12月有923名居民，直至2015年已有1221名居民。</p>
+<p>哈尔施塔特的“Hall”可能源自于古克尔特语的“盐”，得名于村庄附近的盐矿，历史上这一地区就因盐而致富。</p>
+<p>这里又被称作“世界上最美的小镇”或“世界最古老的盐都”，“著名爱情打卡地”。<br>[<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%93%88%E5%B0%94%E6%96%BD%E5%A1%94%E7%89%B9/10904212?fr=aladdin">百度百科</a>]</p>
+<h1 id="Hallstatt-Lake"><a href="#Hallstatt-Lake" class="headerlink" title="Hallstatt Lake"></a>Hallstatt Lake</h1><p>哈尔施塔特湖是奥地利的湖泊，位于上奥地利州萨尔茨卡默古特度假区，14个湖泊中最富灵性的观光胜地。长5.9公里、宽2.3公里，面积8.55平方公里，海拔高度508公尺，最大水深125公尺，是水肺潜水的热门地点。</p>
+<p>清晨的湖面不时笼罩著一层薄雾，偶然撑来一叶扁舟，激起的波澜在平静的湖面划出无数涟漪；<br>傍晚的湖岸更是迷人，红树黄叶漫山遍野，天鹅水鸭浮游觅食，还有岸边花团锦蔟的咖啡屋，都成为最靓丽的一道风景线。<br>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hans/%E5%93%88%E7%88%BE%E6%96%BD%E5%A1%94%E7%89%B9%E6%B9%96">wikipedia</a>]</p>
+<h2 id="Hallstatt-1"><a href="#Hallstatt-1" class="headerlink" title="Hallstatt"></a>Hallstatt</h2><p><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/hallstatt.jpg"></p>
+<p align="middle"> Hallstatt, Austria by <a target="_blank" rel="noopener" href="http://www.csakany.com/pics/2007EuroTrip/files/hallstatt.jpg">Nick Csakany</a></p>
+
+<h2 id="Sun-painting-the-lake"><a href="#Sun-painting-the-lake" class="headerlink" title="Sun painting the lake"></a>Sun painting the lake</h2><p><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/Hallstatt_Austria.jpg"></p>
+<p align="middle"> Hallstatt Lake by <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/simonmatzinger/32139955053/">Simon Matzinger</a></p>
+
+<h2 id="Seelande"><a href="#Seelande" class="headerlink" title="Seelände"></a>Seelände</h2><p><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/Seelande.jpg"></p>
+<p align="middle">Seelände(Hallstatt Lahn) by <a target="_blank" rel="noopener" href="https://unsplash.com/photos/xzJ92bNCXHA">Willian Justen</a></p>
 
         </div>
 
@@ -159,7 +225,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://enhaosun.com/2021/04/06/SH/YIZHOU_ROAD_SPRING/">http://enhaosun.com/2021/04/06/SH/YIZHOU_ROAD_SPRING/</a></span>
+                        <span><a href="http://enhaosun.com/2021/04/11/Geographic/HALLSTATT_AUSTRIA/">http://enhaosun.com/2021/04/11/Geographic/HALLSTATT_AUSTRIA/</a></span>
                     </p>
                 
                 
@@ -183,7 +249,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/Shanghai/"># Shanghai</a>
+                        <a href="/tags/Geographic/"># Geographic</a>
                     
                         
                 </span>
@@ -196,10 +262,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2021/04/10/Peninsula/BOX_0/">BOX 0</a>
             
-            
-            <a class="next" rel="next" href="/2021/04/02/Bread/Basic/">面包基础干货</a>
+            <a class="next" rel="next" href="/2021/04/10/SH/XIAOQIAO_LIUSHUI/">小桥流水·上海</a>
             
         </section>
 
