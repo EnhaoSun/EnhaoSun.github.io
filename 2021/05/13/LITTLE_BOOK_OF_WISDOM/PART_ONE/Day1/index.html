@@ -12,7 +12,7 @@
 
 
 
-<title>BOX 11 | Enhao&#39;s Blog</title>
+<title>PART ONE - Day 1 | Enhao&#39;s Blog</title>
 
 
 
@@ -107,11 +107,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">BOX 11</h1>
+            <h1 class="post-title">PART ONE - Day 1</h1>
             
                 <div class="post-meta">
                     
@@ -120,14 +182,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">May 8, 2021&nbsp;&nbsp;10:00:00</a>
+                        Date: <a href="#">May 13, 2021&nbsp;&nbsp;21:47:00</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/%E5%8D%8A%E5%B2%9B/">半岛</a>
+                                <a href="/categories/%E5%B0%8F%E5%B0%8F%E6%99%BA%E6%85%A7%E4%B9%A6/">小小智慧书</a>
                             
                         </span>
                     
@@ -136,11 +198,11 @@
         </header>
 
         <div class="post-content">
-            <blockquote>
-<p>“The best way out is always through.” - Robert Frost</p>
+            <h1 id="Living-a-Full-Life-with-Christ"><a href="#Living-a-Full-Life-with-Christ" class="headerlink" title="Living a Full Life with Christ"></a>Living a Full Life with Christ</h1><blockquote>
+<p>“Every Christian is to become a little Christ. The whole purpose of becoming a Christian is simple nothing else.” - Mere Christianity</p>
 </blockquote>
-<p><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/Lake_Brienz_Swizerland.jpg"></p>
-<p align="middle">Lake Brienz, Swizerland by <a target="_blank" rel="noopener" href="https://unsplash.com/photos/mawU2PoJWfU">Andreas Gücklhorn</a></p>
+<p><img src="https://blog-enhao.oss-cn-shanghai.aliyuncs.com/Tipsoo_Lake_WA_USA.jpg"></p>
+<p align="middle">Tipsoo Lake, WA, USA by <a target="_blank" rel="noopener" href="https://www.actionphototours.com/">David Swindler </a></p>
 
         </div>
 
@@ -155,7 +217,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://enhaosun.com/2021/05/08/Peninsula/BOX_11/">http://enhaosun.com/2021/05/08/Peninsula/BOX_11/</a></span>
+                        <span><a href="http://enhaosun.com/2021/05/13/LITTLE_BOOK_OF_WISDOM/PART_ONE/Day1/">http://enhaosun.com/2021/05/13/LITTLE_BOOK_OF_WISDOM/PART_ONE/Day1/</a></span>
                     </p>
                 
                 
@@ -179,7 +241,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/Peninsula/"># Peninsula</a>
+                        <a href="/tags/LBOW/"># LBOW</a>
                     
                         
                 </span>
@@ -192,10 +254,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2021/05/13/LITTLE_BOOK_OF_WISDOM/Introduction/">Introduction</a>
             
-            
-            <a class="next" rel="next" href="/2021/04/29/Peninsula/BOX_10/">BOX 10</a>
+            <a class="next" rel="next" href="/2021/05/13/LITTLE_BOOK_OF_WISDOM/Introduction/">Introduction</a>
             
         </section>
 
